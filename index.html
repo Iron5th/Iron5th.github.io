@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Boyles | Master Automotive Mechanic & Builder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        shopBrown: '#A855F7', /* Accent bronze/amber tone */
+                        neonBlue: '#38BDF8',
+                        darkCarbon: '#05070B',
+                        cardSlate: '#0D1322',
+                        borderBlue: '#0284C7'
+                    },
+                    fontFamily: {
+                        heading: ['"Chakra Petch"', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .metal-gradient {
+            background: linear-gradient(135deg, #0F172A 0%, #090D16 50%, #030712 100%);
+        }
+        .glow-blue {
+            box-shadow: 0 0 30px rgba(56, 189, 248, 0.25);
+        }
+        .glow-bronze {
+            box-shadow: 0 0 30px rgba(180, 83, 9, 0.25);
+        }
+        .text-glow {
+            text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+        }
+        /* Grid background pattern */
+        .bg-grid {
+            background-size: 30px 30px;
+            background-image: 
+                linear-gradient(to right, rgba(56, 189, 248, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(56, 189, 248, 0.05) 1px, transparent 1px);
+        }
+    </style>
+</head>
+<body class="bg-darkCarbon text-gray-100 font-sans selection:bg-neonBlue selection:text-black">
+
+    <!-- Header / Nav -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-darkCarbon/90 backdrop-blur-md border-b border-gray-800/80">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-heading text-2xl font-bold tracking-wider text-white flex items-center gap-2">
+                <span class="w-3 h-3 bg-neonBlue inline-block animate-ping rounded-full"></span>
+                JB.<span class="text-neonBlue text-glow">MECHANICS</span>
+            </a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#about" class="hover:text-neonBlue transition-colors">About</a>
+                <a href="#northstar" class="hover:text-neonBlue transition-colors">North Star</a>
+                <a href="#skills" class="hover:text-neonBlue transition-colors">The Stack</a>
+                <a href="#experience" class="hover:text-neonBlue transition-colors">Recent Builds</a>
+            </nav>
+            <a href="mailto:jonathan.boyles@email.com" class="bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white font-heading px-6 py-2.5 rounded text-sm uppercase tracking-wider transition-all transform hover:scale-105 glow-bronze">
+                Contact Me
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center metal-gradient bg-grid relative pt-20 px-6 overflow-hidden">
+        <!-- Floating atmospheric glow element -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-neonBlue/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute bottom-10 right-10 w-80 h-80 bg-amber-700/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="inline-block border border-neonBlue/40 bg-neonBlue/10 text-neonBlue px-4 py-1.5 rounded-full text-xs font-heading tracking-widest uppercase mb-6 glow-blue">
+                Precision Engineering & Custom Fabrication
+            </div>
+            <h1 class="font-heading text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 uppercase">
+                Jonathan <span class="text-neonBlue text-glow">Boyles</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto mb-10 font-light">
+                Master Automotive Mechanic & High-Performance Engine Builder. Specializing in micro-tolerances, complex electrical diagnostics, and forced-induction power plants.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#northstar" class="bg-neonBlue hover:bg-sky-400 text-gray-950 font-heading font-bold px-8 py-4 rounded uppercase tracking-wider transition-all glow-blue transform hover:-translate-y-0.5">
+                    Explore North Star Build
+                </a>
+                <a href="mailto:jonathan.boyles@email.com" class="border border-amber-700/60 hover:border-amber-600 bg-amber-950/20 text-amber-400 font-heading px-8 py-4 rounded uppercase tracking-wider transition-all">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- North Star Section -->
+    <section id="northstar" class="py-24 px-6 bg-cardSlate border-t border-b border-gray-800/80 relative">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-amber-500 text-xs font-heading tracking-widest uppercase block mb-2">The Ultimate Project</span>
+                <h2 class="font-heading text-3xl md:text-5xl font-bold uppercase text-white">The '69 Camaro Resurrection</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-darkCarbon p-8 rounded-xl border border-amber-800/40 relative group hover:border-amber-600 transition-all duration-300">
+                    <div class="absolute top-0 right-0 bg-gradient-to-r from-amber-700 to-amber-600 text-white text-xs font-heading px-4 py-1.5 rounded-bl tracking-wider">Zero-Base Build</div>
+                    <h3 class="font-heading text-2xl font-bold mb-4 text-white">Bare Metal Challenge</h3>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Took on a complete shell rebuild of a 1969 Chevy Camaro that arrived with literally no motor, trunk lid, front clip, seats, steering wheel, or glove box. Fabricated, aligned, and built the entire platform from scratch.
+                    </p>
+                    <ul class="space-y-3 text-sm text-gray-300 font-mono">
+                        <li class="flex items-center gap-2"><span class="text-neonBlue">&#9632;</span> Structural alignment & body panel fitment</li>
+                        <li class="flex items-center gap-2"><span class="text-neonBlue">&#9632;</span> Custom interior architecture & steering setup</li>
+                        <li class="flex items-center gap-2"><span class="text-neonBlue">&#9632;</span> Complete powertrain and subframe fabrication</li>
+                    </ul>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-darkCarbon p-6 rounded-lg border border-gray-800 hover:border-neonBlue/50 transition-all">
+                        <h4 class="font-heading text-lg font-bold text-neonBlue mb-2">Engine Rebuilding & Precision Boring</h4>
+                        <p class="text-gray-400 text-sm">Every cylinder bored and honed to absolute tight-tolerance specs, ensuring maximum compression and extreme durability under high boost.</p>
+                    </div>
+                    <div class="bg-darkCarbon p-6 rounded-lg border border-gray-800 hover:border-neonBlue/50 transition-all">
+                        <h4 class="font-heading text-lg font-bold text-neonBlue mb-2">Advanced Diagnostic Troubleshooting</h4>
+                        <p class="text-gray-400 text-sm">Isolating intricate electrical faults, fuel delivery inconsistencies, and sensor anomalies with methodical diagnostic tooling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Stack / Skills Section -->
+    <section id="skills" class="py-24 px-6 bg-darkCarbon relative">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-neonBlue text-xs font-heading tracking-widest uppercase block mb-2">Mastery & Tooling</span>
+                <h2 class="font-heading text-3xl md:text-5xl font-bold uppercase text-white">The Shop Stack</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-cardSlate p-8 rounded-xl border border-gray-800 hover:border-neonBlue transition-all transform hover:-translate-y-1">
+                    <div class="text-neonBlue font-heading text-2xl font-bold mb-3">01</div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-2">Engine Rebuilding</h3>
+                    <p class="text-gray-400 text-sm">Complete teardown, meticulous block prep, precision boring, and balanced rotating assembly construction.</p>
+                </div>
+                <div class="bg-cardSlate p-8 rounded-xl border border-gray-800 hover:border-amber-700 transition-all transform hover:-translate-y-1">
+                    <div class="text-amber-500 font-heading text-2xl font-bold mb-3">02</div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-2">Precision Boring</h3>
+                    <p class="text-gray-400 text-sm">Achieving micro-inch surface finishes and exact cylinder clearances for optimal ring seal and power output.</p>
+                </div>
+                <div class="bg-cardSlate p-8 rounded-xl border border-gray-800 hover:border-neonBlue transition-all transform hover:-translate-y-1">
+                    <div class="text-neonBlue font-heading text-2xl font-bold mb-3">03</div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-2">Advanced Diagnostics</h3>
+                    <p class="text-gray-400 text-sm">OEM diagnostic scan tool wizardry, oscilloscope waveform analysis, and deep system electrical tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Recent Work -->
+    <section id="experience" class="py-24 px-6 bg-cardSlate border-t border-gray-800/80">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-amber-500 text-xs font-heading tracking-widest uppercase block mb-2">Track Record</span>
+                <h2 class="font-heading text-3xl md:text-5xl font-bold uppercase text-white">Recent Shop Builds</h2>
+            </div>
+            <div class="space-y-8">
+                <div class="bg-darkCarbon p-8 rounded-xl border border-gray-800 hover:border-neonBlue/40 transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                        <h3 class="font-heading text-xl font-bold text-white">2020 BMW M6 (S63 Engine)</h3>
+                        <span class="text-neonBlue text-sm font-mono bg-neonBlue/10 px-3 py-1 rounded border border-neonBlue/20">Top-End Master Overhaul</span>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Executed a complete top-end mechanical rebuild on a modern twin-turbo BMW S63 powerhouse, managing high-complexity timing gear alignment, valvetrain calibration, and tight-tolerance torque sequences.
+                    </p>
+                </div>
+                <div class="bg-darkCarbon p-8 rounded-xl border border-gray-800 hover:border-amber-700/40 transition-all">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                        <h3 class="font-heading text-xl font-bold text-white">1996 Chevy Impala SS</h3>
+                        <span class="text-amber-500 text-sm font-mono bg-amber-950/20 px-3 py-1 rounded border border-amber-700/30">Motor Swap & ProCharger Build</span>
+                    </div>
+                    <p class="text-gray-300 text-sm leading-relaxed">
+                        Built up a classic American heavy cruiser from the block up. Dropped in a brand-new motor paired with a custom ProCharger forced-induction system for massive horsepower gains and reliable boost management.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / CTA -->
+    <footer class="py-16 bg-darkCarbon text-center border-t border-gray-800/80 px-6">
+        <div class="max-w-xl mx-auto">
+            <h2 class="font-heading text-3xl font-bold text-white mb-4 uppercase">Ready to Build Something Fast?</h2>
+            <p class="text-gray-400 mb-8 text-sm">Whether you need an engine built right or high-end diagnostic mastery, let's talk shop.</p>
+            <a href="mailto:jonathan.boyles@email.com" class="bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white font-heading px-8 py-4 rounded uppercase tracking-wider inline-block transition-all glow-bronze transform hover:scale-105">
+                Email Jonathan Now
+            </a>
+            <p class="text-gray-600 text-xs mt-12">&copy; 2026 Jonathan Boyles. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
